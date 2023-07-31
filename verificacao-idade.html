@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    
+    <div id="espaco-verificacao">
+        <h1>Verificação de idade</h1>
+        <span>Ano de nascimento:</span>
+        <input type="text" id="campo-idade">
+
+        <!-- sexo -->
+        <fieldset>
+           <legend>Sexo</legend>
+           <label for="masculino">
+               <input type="radio" name="sexo" id="masculino">
+               <span>Masculino</span>
+           </label>
+
+           <label for="feminino">
+               <input type="radio" name="sexo" id="feminino">
+               <span>Feminino</span>
+           </label>
+        </fieldset>
+
+
+        <!-- botoes -->
+        <div>
+            <button type="button" onclick="verificar()">Verificar</button>
+            <button type="button" onclick="limpar()">Limpar</button>
+        </div>
+
+
+        <!-- resultado -->
+        <div>
+            <p id="resultado">Preencha os dados acima.</p>
+        </div>
+
+        <!-- imagem pessoa -->
+        <div id="imagem-pessoa">
+            <img src="" id="imagem" width="200">
+        </div>
+    </div>
+
+    
+
+    <!-- script site -->
+    <script src="js/script.js"></script>
+</body>
+</html>
